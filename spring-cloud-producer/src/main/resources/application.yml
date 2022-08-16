@@ -1,0 +1,9 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://10.0.1.9:8761/eureka/
+server:
+  port: 9000
+spring:
+  application:
+    name: spring-cloud-producer
