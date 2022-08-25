@@ -1,11 +1,9 @@
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://10.0.1.9:8761/eureka/
-  instance:
-    preferIpAddress: true
 server:
-  port: 9001
+  port: 8080
 spring:
   application:
     name: spring-cloud-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848

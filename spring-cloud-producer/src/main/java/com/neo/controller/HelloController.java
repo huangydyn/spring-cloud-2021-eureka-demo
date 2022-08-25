@@ -12,7 +12,7 @@ public class HelloController {
     private static Logger logger = LoggerFactory.getLogger(HelloController.class);
 
     @RequestMapping("/hello")
-    public String index(@RequestParam String name) {
+    public String index(@RequestParam(required = false) String name) {
         logger.info("get request name {}", name);
         return "hello " + name + "，this is first messge";
     }
