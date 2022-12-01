@@ -1,9 +1,16 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://10.0.1.9:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
 server:
   port: 9000
 spring:
+  main:
+    allow-circular-references: true
   application:
     name: spring-cloud-producer
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8888
+      eager: true

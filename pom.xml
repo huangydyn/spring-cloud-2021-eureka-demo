@@ -12,5 +12,6 @@
     <modules>
         <module>spring-cloud-consumer</module>
         <module>spring-cloud-producer</module>
+        <module>eureka-server</module>
     </modules>
 </project>
